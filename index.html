@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The HVAC Know It All Business Track - Gary McCreadie</title>
+<meta name="description" content="Two parallel tracks for the shop-owner-track technician. Track A (Launch Smarter, 8 weeks) for the senior tech ready to launch. Track B (Scale Smarter, 6 weeks) for the 1-to-5-tech shop owner ready to break the owner-on-tools ceiling. Caps at 25-30 per cycle. Quarterly cadence. Application gated.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="The HVAC Know It All Business Track - Gary McCreadie">
+<meta property="og:description" content="For the senior tech ready to launch and the 1-to-5-tech shop owner ready to scale. Two tracks, one cohort calendar. Capped, application-gated, quarterly cycles.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://andrei170.github.io/hvac-know-it-all-landing/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--bg-deep:#050506;--bg-elev:#0e0e10;--bg-card:rgba(20,20,24,0.7);--accent:#d4af37;--accent-bright:#ecc88a;--text-primary:#ece9e3;--text-secondary:#a09c93;--text-muted:#6c685f;--border:rgba(212,175,55,0.18);--border-strong:rgba(212,175,55,0.45);--accent-soft:rgba(212,175,55,0.08);--risk-red:#dc4040;--risk-soft:rgba(220,64,64,0.08)}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg-deep);color:var(--text-primary);line-height:1.65;overflow-x:hidden}
+  body::before{content:'';position:fixed;inset:0;background:radial-gradient(circle at 10% 0%,rgba(212,175,55,0.07),transparent 50%),radial-gradient(circle at 90% 100%,rgba(212,175,55,0.05),transparent 50%);pointer-events:none;z-index:0}
+  .container{max-width:1100px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
+  .container-narrow{max-width:780px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
+  h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;letter-spacing:-0.01em;line-height:1.15}
+  nav{position:fixed;top:0;left:0;right:0;padding:16px 0;background:rgba(5,5,6,0.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--border);z-index:100}
+  .nav-inner{display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto;padding:0 28px}
+  .logo{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;letter-spacing:0.04em}
+  .nav-cta{padding:10px 22px;background:var(--accent);color:var(--bg-deep);border-radius:2px;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none}
+  .nav-cta:hover{background:var(--accent-bright)}
+  .hero{padding:130px 0 50px;text-align:center}
+  .eyebrow{display:inline-block;padding:8px 18px;background:var(--accent-soft);border:1px solid var(--border-strong);border-radius:100px;font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent-bright);margin-bottom:28px}
+  .hero h1{font-size:clamp(38px,5.5vw,64px);line-height:1.08;margin:0 auto 20px;max-width:880px;text-align:center;text-wrap:balance}
+  .hero h1 em{color:var(--accent);font-style:italic;font-weight:400}
+  .hero-sub{font-size:18px;color:var(--text-secondary);max-width:680px;margin:0 auto 32px;line-height:1.65;text-align:center;text-wrap:pretty}
+  .hero-meta{text-align:center;margin:0 auto 36px;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-muted)}
+  .hero-meta span{margin:0 14px}
+  .video-label{text-align:center;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+  .video-wrap{position:relative;padding-bottom:56.25%;margin:0 auto 14px;max-width:880px;border-radius:6px;overflow:hidden;border:1px solid var(--border-strong);box-shadow:0 30px 80px rgba(0,0,0,0.6);background:linear-gradient(135deg,#0e0e10,#050506);cursor:pointer}
+  .video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+  .video-poster{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at center,rgba(212,175,55,0.18),transparent 60%),linear-gradient(135deg,#0e0e10,#050506)}
+  .video-poster .play-btn{position:absolute;width:84px;height:84px;border-radius:50%;background:rgba(212,175,55,0.92);display:flex;align-items:center;justify-content:center;box-shadow:0 12px 40px rgba(212,175,55,0.5);transition:all 0.3s ease;border:3px solid rgba(255,255,255,0.95)}
+  .video-wrap:hover .video-poster .play-btn{transform:scale(1.08);background:var(--accent-bright)}
+  .video-poster .play-btn::after{content:"";display:block;width:0;height:0;border-style:solid;border-width:14px 0 14px 24px;border-color:transparent transparent transparent #050506;margin-left:6px}
+  .video-poster .video-source-label{position:absolute;bottom:14px;right:18px;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-secondary);background:rgba(0,0,0,0.65);padding:6px 12px;border-radius:2px}
+  .video-note{font-size:12px;color:var(--text-muted);font-style:italic;letter-spacing:0.04em;margin:0 auto 32px;max-width:680px;line-height:1.55;text-align:center}
+  .typeform-iframe{width:100%;height:660px;border:0;border-radius:4px;display:block;background:var(--bg-elev)}
+  div[data-tf-live]{min-height:600px}
+  .cta-primary{display:inline-block;padding:18px 44px;background:var(--accent);color:var(--bg-deep);border-radius:3px;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;transition:all 0.3s ease;box-shadow:0 12px 30px rgba(212,175,55,0.25)}
+  .cta-primary:hover{background:var(--accent-bright);transform:translateY(-2px)}
+  .cta-wrap{text-align:center}
+  section{padding:80px 0}
+  .section-eyebrow{font-size:11px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--accent);margin-bottom:18px;text-align:center}
+  .section-title{font-size:clamp(32px,4.5vw,52px);margin-bottom:18px;text-align:center;line-height:1.12}
+  .section-title em{color:var(--accent);font-style:italic;font-weight:400}
+  .section-intro{font-size:17px;color:var(--text-secondary);max-width:680px;margin:0 auto 56px;line-height:1.65;text-align:center}
+  .section-intro em{color:var(--accent);font-style:italic}
+  .who-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1000px;margin:0 auto}
+  @media(max-width:760px){.who-grid{grid-template-columns:1fr}}
+  .who-card{padding:36px 28px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px}
+  .who-card .num{font-family:'Cormorant Garamond',serif;font-size:48px;color:var(--accent);font-weight:600;line-height:1;margin-bottom:12px}
+  .who-card h3{font-size:21px;margin-bottom:12px;color:var(--text-primary)}
+  .who-card p{color:var(--text-secondary);font-size:14px;line-height:1.7}
+  .pillar-list{max-width:880px;margin:0 auto}
+  .pillar{padding:36px 32px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px;margin-bottom:18px}
+  .pillar .pillar-num{font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--accent);text-transform:uppercase;letter-spacing:0.16em;margin-bottom:10px;font-weight:600}
+  .pillar h3{font-size:26px;margin-bottom:14px;color:var(--text-primary)}
+  .pillar .outcome{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--accent-bright);font-style:italic;line-height:1.4;margin-bottom:14px}
+  .pillar p{color:var(--text-secondary);font-size:15px;line-height:1.7}
+  .work-note{margin:48px auto 0;padding:24px 28px;max-width:780px;text-align:center;font-style:italic;color:var(--text-secondary);font-size:15px;line-height:1.7;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+  .founder-block{display:flex;flex-direction:column;gap:36px;max-width:880px;margin:0 auto;align-items:center}
+  .founder-text{width:100%;text-align:left}
+  .founder-text .name-loc{font-size:13px;color:var(--accent);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:14px}
+  .founder-text h3{font-size:32px;margin-bottom:18px}
+  .founder-text .key-quote{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--text-primary);font-style:italic;line-height:1.4;margin-bottom:24px;padding:18px 22px;border-left:3px solid var(--accent);background:var(--accent-soft)}
+  .founder-text .key-quote em{color:var(--accent);font-style:italic}
+  .founder-text p{color:var(--text-secondary);font-size:15px;line-height:1.75;margin-bottom:14px}
+  .founder-text .key-statement{font-weight:600;color:var(--text-primary);font-size:16px;margin:18px 0;line-height:1.6}
+  .founder-text ul{list-style:none;padding:0;margin:18px 0 0 0}
+  .founder-text li{padding:6px 0;color:var(--text-secondary);font-size:14px;border-bottom:1px solid var(--border)}
+  .founder-text li:last-child{border-bottom:0}
+  .founder-text li::before{content:"\00B7";color:var(--accent);margin-right:10px;font-weight:bold}
+  .founder-text .trust-badge{display:inline-block;margin-top:20px;padding:8px 14px;background:var(--accent-soft);border:1px solid var(--border-strong);border-radius:100px;font-size:12px;color:var(--accent-bright);letter-spacing:0.08em}
+  .receipts-wall{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1080px;margin:0 auto}
+  @media(max-width:760px){.receipts-wall{grid-template-columns:1fr}}
+  .receipt{padding:28px 24px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px;font-style:italic;color:var(--text-secondary);font-size:14px;line-height:1.65}
+  .receipt .name{display:block;margin-top:14px;font-style:normal;color:var(--accent);font-size:13px;letter-spacing:0.06em;font-weight:600}
+  .receipts-note{text-align:center;margin-top:36px;font-size:13px;color:var(--text-muted);font-style:italic;max-width:680px;margin-left:auto;margin-right:auto;line-height:1.7}
+  .faq{max-width:780px;margin:0 auto}
+  .faq-item{padding:26px 0;border-bottom:1px solid var(--border)}
+  .faq-item h3{font-size:20px;margin-bottom:12px;color:var(--text-primary);text-align:left}
+  .faq-item p{color:var(--text-secondary);font-size:15px;line-height:1.7}
+  .form-frame{max-width:680px;margin:0 auto;padding:40px;border:1px solid var(--border-strong);border-radius:6px;background:var(--bg-elev);box-shadow:0 30px 80px rgba(0,0,0,0.5)}
+  .form-frame h3{font-size:26px;margin-bottom:8px;text-align:center}
+  .form-frame p{color:var(--text-secondary);font-size:14px;text-align:center;margin-bottom:24px}
+  .final-cta-section{text-align:center;padding:100px 0}
+  .final-cta-section h2{font-size:clamp(32px,4vw,46px);margin-bottom:24px;max-width:780px;margin-left:auto;margin-right:auto}
+  .final-cta-section h2 em{color:var(--accent);font-style:italic;font-weight:400}
+  .final-cta-section p{font-size:17px;color:var(--text-secondary);max-width:580px;margin:0 auto 36px;line-height:1.65}
+  .final-cta-section .tagline{margin-top:48px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:24px;color:var(--text-primary)}
+  .application-note{font-size:13px;color:var(--text-muted);margin-top:18px;letter-spacing:0.06em;font-style:italic}
+  .risk-callout{margin:40px auto 0;padding:22px 24px;max-width:780px;background:var(--risk-soft);border-left:3px solid var(--risk-red);border-radius:2px;line-height:1.7}
+  .risk-callout .risk-label{display:block;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#ff7a7a;margin-bottom:8px;font-weight:700}
+  .risk-callout p{color:#e2b5b5;font-size:14px;margin:0;line-height:1.7}
+  footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;color:var(--text-muted);font-size:13px}
+  footer .footer-meta{font-size:12px;letter-spacing:0.04em}
+  footer .footer-disclaimer{margin-top:14px;font-size:11px;color:var(--text-muted);font-style:italic;max-width:780px;margin:14px auto 0;line-height:1.6}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <div class="logo">HVAC Know It All Business Track</div>
+    <a href="#enrol" class="nav-cta">Apply</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow">The HVAC Know It All Business Track &middot; Hosted By Gary McCreadie</div>
+    <h1>Built for the senior tech ready to launch <em>and the shop owner ready to scale.</em></h1>
+    <p class="hero-sub">Two tracks, one cohort calendar. Track A (Launch Smarter, 8 weeks). Track B (Scale Smarter, 6 weeks). Caps at 25 to 30 operators per cycle. Application gated. Apply when the work fits.</p>
+    <p class="hero-meta"><span>25-30 Operator Cap</span>&middot;<span>Quarterly Cycles</span>&middot;<span>Application Reviewed In 48 Hrs</span></p>
+
+    <p class="video-label">A Sample From Gary's YouTube</p>
+    <div class="video-wrap" id="hero-video" role="button" tabindex="0" aria-label="Play sample video">
+      <div class="video-poster">
+        <div class="play-btn"></div>
+        <span class="video-source-label">YouTube &middot; HVAC Know It All</span>
+      </div>
+    </div>
+    <p class="video-note">Sample video pulled from Gary's HVAC Know It All YouTube channel to visualise the operator-grounded voice. Swap to a custom 5-7 minute Business Track VSL on day one of the install.</p>
+    <div class="cta-wrap"><a href="#enrol" class="cta-primary">Apply To Enrol</a></div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-eyebrow">Who This Is For</div>
+    <h2 class="section-title">Two tracks for the shop-owner-track technician. <em>Same operator, twelve-month arc.</em></h2>
+    <div class="who-grid">
+      <div class="who-card">
+        <div class="num">A</div>
+        <h3>Launch Smarter (8 Weeks)</h3>
+        <p>The senior tech ready to start the first shop, or the first-year shop owner still wiring the foundation. Tickets in hand or in the final phase. Ready to step off someone else's truck and build the book of business that has your name on the side.</p>
+      </div>
+      <div class="who-card">
+        <div class="num">B</div>
+        <h3>Scale Smarter (6 Weeks)</h3>
+        <p>The 1-to-5-tech shop owner with the owner-on-tools ceiling in front of you. Running the routes, writing the quotes, training the bench, doing payroll at night. Ready to map the route, productise the service agreement, and run the owner-off-tools transition.</p>
+      </div>
+      <div class="who-card">
+        <div class="num">12</div>
+        <h3>The Twelve-Month Arc</h3>
+        <p>Track A and Track B are sequential for the same operator. Launch Smarter in cycle one. Scale Smarter when the first hire is in and the route is stabilising. The cohort calendar is quarterly so the next cycle is never more than 90 days away.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:linear-gradient(180deg,transparent,rgba(212,175,55,0.04),transparent)">
+  <div class="container">
+    <div class="section-eyebrow">The Work</div>
+    <h2 class="section-title">Two tracks. <em>Named work, week by week.</em></h2>
+    <p class="section-intro">No mystery curriculum. No hidden modules. The work is named on day one and walked module by module.</p>
+
+    <div class="pillar-list">
+      <div class="pillar">
+        <div class="pillar-num">Track A &middot; Launch Smarter &middot; 8 Weeks</div>
+        <h3>From senior tech to first-year shop owner, walked module by module.</h3>
+        <p class="outcome">By graduation, you walk away with a written pricing structure, a first-90-days cash plan, a province-or-state licensing checklist, the first-5-service-call lead plan, and the hire-the-first-tech checklist.</p>
+        <p>Week one - licensing audit for your province or state. Week two - pricing structure that survives a slow week. Week three - the first five service-call leads and how to get them. Week four - basic CRM and scheduling. Week five - hire-the-first-tech checklist. Week six - first-90-days cash plan. Week seven - operator review with the cohort. Week eight - graduation and the bridge to Track B if you are ready. Caps at 25-30 per cycle.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">Track B &middot; Scale Smarter &middot; 6 Weeks</div>
+        <h3>From owner-on-tools to owner-off-tools, walked module by module.</h3>
+        <p class="outcome">By graduation, you walk away with a route-optimisation plan, a productised service agreement, a hiring and retention plan for the 2026 labour market, a local-service ad framework, and the owner-off-tools transition plan.</p>
+        <p>Week one - route optimisation across the existing tech schedule. Week two - hiring and retention plan for the 2026 labour market. Week three - productised service agreements and recurring revenue. Week four - local-service ads on Meta and Google. Week five - owner-off-tools transition plan. Week six - operator review and graduation. Caps at 25-30 per cycle.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">The Cadence</div>
+        <h3>Tuesday evening cohort call. Friday office-hours. Cohort channel seven days.</h3>
+        <p class="outcome">By the end of the first week, the cohort has met, the homework is locked, and the cadence is in your calendar through graduation.</p>
+        <p>Tuesday evening cohort call (60-75 minutes). Friday afternoon office-hours block (open seating, drop in if stuck). Cohort channel open seven days a week for between-call questions. Work between calls is 3-6 hours per week. The room is sized to keep the discussion real.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">The Application</div>
+        <h3>Four-minute Typeform. Manual review within 48 hours.</h3>
+        <p class="outcome">Approved applicants get the enrolment link direct. Routed applicants get the honest next-step (free content, peer-network room, retake-in-12-months note).</p>
+        <p>The application sizes the room before checkout. Caps the cohort. Routes Too Early bands to the free content. Routes Too Far Along bands to the right peer-network room. Routes Ready For Track A and Ready For Track B to enrolment. Quarterly cycles. The application stays open between cycles and routes to the next cycle automatically.</p>
+      </div>
+    </div>
+    <p class="work-note">Two parallel tracks. Both fronted by Gary in the existing operator-grounded voice. Both cap at 25-30 per cycle. Both run quarterly. The application is the filter. The cohort is the room.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-eyebrow">About Gary</div>
+    <h2 class="section-title">Twenty years on the tools. <em>Still installing condensers every week.</em></h2>
+    <div class="founder-block">
+      <div class="founder-text">
+        <div class="name-loc">Gary McCreadie &middot; Founder, HVAC Know It All &middot; Mississauga, Ontario</div>
+        <h3>About Gary</h3>
+        <div class="key-quote">"Twenty years on the tools, refrigeration ticket, Gas 1 ticket, <em>still on the truck at Combined Air every week.</em>"</div>
+        <p>Gary McCreadie is the founder of HVAC Know It All - the multi-platform education brand for HVAC and refrigeration technicians. Licensed Refrigeration Technician and Gas 1 Technician at Combined Air Mechanical in Mississauga, Ontario. Approaching the 20-year mark on the tools.</p>
+        <p class="key-statement">The Business Track is the operator-development cohort for the shop-owner-track technician. Track A walks the launch. Track B walks the scale. The free content stays free - the podcast, the app, the Facebook group are not changing.</p>
+        <ul>
+          <li>Approximately 101K Instagram followers (@hvacknowitall1)</li>
+          <li>HVAC Know It All YouTube channel with weekly podcast video uploads</li>
+          <li>HVAC Know It All Podcast on Apple Podcasts and Spotify</li>
+          <li>HVAC Know It All mobile app with 1,800-plus users in the first 1.5 weeks at launch</li>
+          <li>HVAC Hub Facebook group (free community)</li>
+          <li>Brand mission: Learn, Teach, Entertain - positive environment</li>
+        </ul>
+        <span class="trust-badge">20 Yrs On The Tools &middot; Refrigeration + Gas 1 Tickets &middot; Combined Air Mechanical</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:linear-gradient(180deg,transparent,rgba(212,175,55,0.04),transparent)">
+  <div class="container">
+    <div class="section-eyebrow">A Note On Receipts</div>
+    <h2 class="section-title">The proof is in the named work, <em>not the page.</em></h2>
+    <p class="section-intro">Below are placeholder receipts for the inaugural cohort cycle. Real cohort testimonials swap in after the first cycle completes. The deeper proof is observable - the HVAC Know It All YouTube channel, the multi-year podcast archive, the 101K Instagram audience, the 1,800-plus app users in the first 1.5 weeks, and the 20-year operator track record on the tools.</p>
+    <div class="receipts-wall">
+      <div class="receipt">"The licensing audit in week one caught two registration issues I had not seen in my own filing. Locked the revised checklist and the pricing structure before the cycle was halfway done."<span class="name">- Cohort placeholder, inaugural cycle (Track A)</span></div>
+      <div class="receipt">"Route optimisation in week one. Productised service agreement in week three. The owner-off-tools transition in week five. Walked away with the full owner-off-tools plan written, not abstract."<span class="name">- Cohort placeholder, inaugural cycle (Track B)</span></div>
+      <div class="receipt">"Gary is still on the tools. Combined Air Mechanical, every week. The cohort feels like a tech-to-tech conversation, not a guru pitch. The room respects the work."<span class="name">- Cohort placeholder, inaugural cycle</span></div>
+    </div>
+    <p class="receipts-note">Placeholder receipts. Real cohort testimonials swap in after the inaugural cycle completes.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-eyebrow">FAQ</div>
+    <h2 class="section-title">Common questions, <em>before applying.</em></h2>
+    <div class="faq">
+      <div class="faq-item"><h3>How is the Business Track different from the free podcast and the free app?</h3><p>The podcast, the YouTube channel, the Instagram, the Facebook HVAC Hub group, and the mobile app are the free tier. They stay free, they stay open, they stay the same cadence. The Business Track is the paid operator-development cohort - capped, application-gated, twelve-month arc across Track A and Track B. The two layers complement each other; they do not compete.</p></div>
+      <div class="faq-item"><h3>Is this ticketed trade training?</h3><p>No. The Business Track is operator development for the shop-owner-track technician. Sales, pricing, ops, hiring, marketing, route optimisation, the owner-off-tools transition. It is not a substitute for TSSA gas training, EPA Section 608 refrigerant certification, the provincial trade colleges, or the manufacturer-certified programs. Trade-ticket curriculum stays where it is.</p></div>
+      <div class="faq-item"><h3>Will Gary promise a specific revenue number for my shop?</h3><p>No. Anyone selling a guaranteed first-year shop revenue in the trades is selling something else. The cohort sells operator development - the pricing structure, the cash plan, the hire checklist, the route plan, the owner-off-tools transition. Results vary by market, capital, operator execution, and regulatory environment.</p></div>
+      <div class="faq-item"><h3>What is the time commitment?</h3><p>Track A is 8 weeks. Track B is 6 weeks. Tuesday evening cohort call (60-75 minutes). Friday office-hours block (optional, open seating). Cohort channel open 7 days a week. Work between calls is 3-6 hours per week. Some weeks lighter (audit weeks), some weeks heavier (build weeks).</p></div>
+      <div class="faq-item"><h3>What is the investment?</h3><p>Mid-four-figure pricing per track. The application surfaces the exact cycle pricing on submit. The tier is sized for the operator ready to do the work - the room is not entry-level.</p></div>
+      <div class="faq-item"><h3>Which track do I apply to?</h3><p>The 90-second scorecard returns the band - Too Early, Ready For Track A, Ready For Track B, Too Far Along. The band tells you which track fits today plus the three biggest gaps in front of you right now. The scorecard sits underneath the homepage VSL.</p></div>
+      <div class="faq-item"><h3>What if I am too early?</h3><p>The application routes you back to the free content, the app, the podcast, and the HVAC Hub Facebook group. Save the scorecard, retake it in 12 months when the foundation is in. Too early is honest, not a knock.</p></div>
+      <div class="faq-item"><h3>What if I am too far along (10-plus techs)?</h3><p>The cohort sizes for the launch / 1-to-5-tech operator. At 10-plus techs, the right peer-network rooms are a better fit. The application surfaces the routing - reply "rooms" to the routing email and the team sends the list.</p></div>
+      <div class="faq-item"><h3>Canada, US, or international?</h3><p>The cohort welcomes operators across North America. Provincial / state licensing is your responsibility - the cohort covers the licensing-audit module by province / state, not as a substitute for the regulator. International applicants are reviewed case by case for time-zone fit.</p></div>
+      <div class="faq-item"><h3>Refund policy?</h3><p>Refund policy locks per cycle and surfaces on the application page for the cycle you apply to.</p></div>
+      <div class="faq-item"><h3>Why do I have to apply?</h3><p>The cohort caps at 25-30 per cycle to keep the room real. The application sizes the room, checks the fit, and surfaces the pricing for the cycle. Four minutes. Manual review within 48 hours. Approval triggers the enrolment link direct.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="enrol" style="background:linear-gradient(180deg,transparent,rgba(212,175,55,0.04),transparent)">
+  <div class="container-narrow">
+    <div class="section-eyebrow">Enrol</div>
+    <h2 class="section-title">Apply to the next cohort.</h2>
+    <p class="section-intro">Four-minute application. Cycles run quarterly. Caps at 25-30 per cycle to keep the room real.</p>
+    <div class="form-frame">
+      <h3>HVAC Know It All Business Track &middot; Application</h3>
+      <p>Four minutes to fill in. Manual review within 48 hours.</p>
+      <div data-tf-live="01HZJC9QM2RSPZSYAH4Z5NGBM7"></div>
+      <noscript><iframe src="https://form.typeform.com/to/uTtFirS4" class="typeform-iframe" title="HVAC Know It All Business Track Application"></iframe></noscript>
+    </div>
+    <p style="text-align:center;margin-top:24px;font-size:13px;color:var(--text-muted)">Or book a working session with Andrei (AG1) directly: <a href="https://calendly.com/ag-copy/call-with-andrei" style="color:var(--accent)">calendly.com/ag-copy/call-with-andrei</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="risk-callout">
+      <span class="risk-label">Regulated-Niche Disclaimer</span>
+      <p>Operator-development cohort. Not a substitute for ticketed trade training (TSSA / EPA Section 608 / provincial trade colleges / manufacturer-certified programs). Results vary by market, capital, operator execution, and regulatory environment. Nothing on this page promises a specific revenue, hire, or business-growth number for the participant.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-narrow">
+    <div class="final-cta-section">
+      <h2>Two tracks, one cohort calendar, <em>capped per cycle so the room stays real.</em></h2>
+      <p>Application takes four minutes. After you submit, manual review runs within 48 hours. No setter calls. No back-and-forth. Approved applicants get the enrolment link direct.</p>
+      <div class="cta-wrap"><a href="#enrol" class="cta-primary">Apply To Enrol</a></div>
+      <p class="application-note">Four-minute form &middot; Manual review within 48 hours</p>
+      <p class="tagline">Licensing audit. Pricing structure. Route plan. Owner-off-tools transition.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p class="footer-meta">HVAC Know It All Business Track &middot; Gary McCreadie &middot; Mississauga, Ontario, Canada &middot; 2026</p>
+    <p class="footer-disclaimer">Operator-development cohort. Not a substitute for ticketed trade training. Results vary by market, capital, operator execution, and regulatory environment. The cohort is educational. Nothing here promises a specific revenue, hire, or business-growth number for the participant. Sample landing page built by AG1 Consulting Ltd in AG1 brand colours. Brand colours and copy lock with Gary on day one of the install.</p>
+  </div>
+</footer>
+
+<script src="//embed.typeform.com/next/embed.js"></script>
+<script>
+(function(){
+  var v = document.getElementById('hero-video');
+  if(!v) return;
+  function load(){
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube.com/embed/eFppRm03XLs?autoplay=1&rel=0';
+    iframe.setAttribute('allow','accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
+    iframe.setAttribute('allowfullscreen','');
+    iframe.frameBorder = '0';
+    v.innerHTML = '';
+    v.appendChild(iframe);
+  }
+  v.addEventListener('click', load);
+  v.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); load(); }});
+})();
+</script>
+</body>
+</html>
